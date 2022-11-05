@@ -60,11 +60,33 @@ button {
 /* navigation bar end */
 
 /* landing page start */
-#lnd_page {
+.hero_section {
   display: grid;
+  /* grid-gap: 2rem; */
   grid-template-columns: repeat(12, 1fr);
   margin: var(--stdMargin);
 }
-.hero_section {
-  grid-column: 1/6;
+.hero_txt {
+  margin-top: 90px;
+  grid-column: 1/5;
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 63px;
+  text-transform: capitalize;
+  color: #34251f;
+}
+.hero_cnt {
+  grid-column: 1/5;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.cta_helper {
+  grid-column: 1/5;
+}
+.cta {
+  grid-column: 1/5;
 }
