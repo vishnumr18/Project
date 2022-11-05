@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 :root {
   --stdMargin: 0 5rem;
 }
@@ -9,6 +10,10 @@
 }
 body {
   background-color: #eeddcd;
+  background-image: url(images/BGbgrd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%vh;
 }
 /* navigation bar start */
 header {
@@ -43,17 +48,24 @@ button {
   display: inline-block;
   margin-left: 192px;
   border: 1px solid black;
-  padding-right: 26px;
-  padding-left: 8px;
+  padding: 10px 26px 10px 8px;
   border-radius: 5px;
 }
 .search input {
   background-color: #eeddcd;
 }
+.search button {
+  width: auto;
+  height: auto;
+  background-color: lightblue;
+  border-radius: 6px;
+}
 .login {
   margin-right: 44px;
 }
-
+.login button {
+  background-color: rgb(128, 82, 51);
+}
 .nav_link li a:hover {
   color: yellowgreen;
 }
@@ -62,17 +74,16 @@ button {
 /* landing page start */
 .hero_section {
   display: grid;
-  /* grid-gap: 2rem; */
+  grid-gap: 1rem;
   grid-template-columns: repeat(12, 1fr);
   margin: var(--stdMargin);
 }
 .hero_txt {
   margin-top: 90px;
   grid-column: 1/5;
-  font-family: "Frank Ruhl Libre";
-  font-style: normal;
+  font-family: "Roboto Mono", monospace;
   font-weight: 700;
-  font-size: 63px;
+  font-size: 48px;
   text-transform: capitalize;
   color: #34251f;
 }
@@ -88,5 +99,23 @@ button {
   grid-column: 1/5;
 }
 .cta {
-  grid-column: 1/5;
+  grid-column: 2/4;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.cta button {
+  width: auto;
+  height: auto;
+  padding: 8px 35px;
+  text-align: center;
+  margin-top: 10px;
+}
+.img {
+  grid-column: 7/-1;
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  left: 733px;
+  top: 135px;
 }
